@@ -1,0 +1,6 @@
+// ENV FORMAT:
+
+SQL_USER=usernameHere
+SQL_PASS=passwordHere
+
+EMPTY_STRING_VAR=''
