@@ -16,21 +16,17 @@ const App = () => {
     .catch(err => console.log('client GET req error:', err))
   }, [])
 
-  if (testState.length === 0) {
-    return null
-  } else {
-    return (
-      <Container>
+  return (
+    <Container>
 
-        <Column>
-          <Title>React running!</Title>
-          <Emoji>⚛️</Emoji>
-          <List testState={testState}/>
-        </Column>
+      <Column>
+        <Title>React running!</Title>
+        <Emoji>⚛️</Emoji>
+        {testState.length === 0? 'No data to display.' : <List testState={testState}/>}
+      </Column>
 
-      </Container>
-    )
-  }
+    </Container>
+  )
 }
 
 export default App;
