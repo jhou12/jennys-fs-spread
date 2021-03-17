@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const dotenv = require('dotenv').config()
+const port = process.env.SERVER || 3000
+
 // const db = require('../database/mysql.js') // USE FOR MYSQL
 // const db = require('../database/mongo.js') // USE FOR MONGO
 
