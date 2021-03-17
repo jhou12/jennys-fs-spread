@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import List from './List.jsx'
+import styled from 'styled-components';
+import Styles, { Container, Column, Title, Emoji } from './Styles.js';
+import List from './List.jsx';
 
 const App = () => {
   const [testState, setTestState] = useState([])
@@ -8,7 +10,7 @@ const App = () => {
   useEffect(() => {
     axios('/read')
     .then(res => {
-      console.log('data retrieved!', res.data)
+      console.log('data retrieved:', res.data)
       setTestState(res.data)
     })
     .catch(err => console.log('client GET req error:', err))
@@ -18,10 +20,15 @@ const App = () => {
     return null
   } else {
     return (
-      <div>
-        React running!
-        <List testState={testState}/>
-      </div>
+      <Container>
+
+        <Column>
+          <Title>React running!</Title>
+          <Emoji>⚛️</Emoji>
+          <List testState={testState}/>
+        </Column>
+
+      </Container>
     )
   }
 }

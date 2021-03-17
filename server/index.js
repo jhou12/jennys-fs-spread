@@ -1,13 +1,14 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const db = require('../database/mysql.js') // USE FOR MYSQL
+// const db = require('../database/mysql.js') // USE FOR MYSQL
 // const db = require('../database/mongo.js') // USE FOR MONGO
 
 app.use(express.static('client/dist'))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
+// REMOVE IF FRONT-END ONLY
 app.get('/read', async (req, res) => {
   try {
     let entries = await db.readAll()

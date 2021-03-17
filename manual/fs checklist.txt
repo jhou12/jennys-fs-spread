@@ -17,3 +17,4 @@
     c.	app.use(express.urlencoded({extended: true})
 10. install webpack
 11. npm install dotenv
+12. npm install --save styled-components

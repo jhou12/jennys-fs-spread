@@ -5,6 +5,7 @@ let seedTest = async () => {
     let wipeDb = await db.Test.countDocuments();
     if (wipeDb) {
       await db.Test.db.dropDatabase();
+      console.log('db wiped, seeding started...')
     }
 
     let arrEntries = []

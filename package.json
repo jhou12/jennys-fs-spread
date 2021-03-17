@@ -7,7 +7,8 @@
     "start": "nodemon server/index.js",
     "react-dev": "webpack --watch",
     "seed-mongo": "node database/seeding/mongoSeed.js",
-    "seed-mysql": "node database/seeding/mysqlSeed.js"
+    "seed-mysql": "node database/seeding/mysqlSeed.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "mysql2": "^2.2.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "sequelize": "^6.5.1"
+    "sequelize": "^6.5.1",
+    "styled-components": "^5.2.1"
   }
 }
