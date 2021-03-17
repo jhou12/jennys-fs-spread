@@ -2,5 +2,7 @@
 
 SQL_USER=usernameHere
 SQL_PASS=passwordHere
+SQL_DB=test
+MONGO_DB=test
 
 EMPTY_STRING_VAR=''

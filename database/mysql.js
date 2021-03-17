@@ -5,7 +5,8 @@ const sequelize = new Sequelize({
   dialect: 'mysql',
   username: process.env.SQL_USER,
   password: process.env.SQL_PASS,
-  database: 'test',
+  database: process.env.SQL_DB,
+  logging: false,
 })
 
 sequelize.authenticate()

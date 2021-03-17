@@ -11,7 +11,7 @@ I built this template to expedite the refactoring of my projects. Made using the
 1. `git clone`
 1. optional: remove unused database from `package.json`
 1. install dependencies with `npm install`
-1. seed database with `npm run seed-mysql` or `npm run seed-mongo`
+1. add `.env` file to root directory with credentials (or copy .env format from `manual/env format.txt`), then seed database with `npm run seed-mysql` or `npm run seed-mongo`
 1. un-comment database of choice in `server/index.js` and start server with `npm run start`
 1. build bundle with `npm run build`
 1. verify app is now running by checking for a list of data on `localhost:3000`
