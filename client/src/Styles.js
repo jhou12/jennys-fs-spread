@@ -7,6 +7,7 @@ height: 100vh;
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
 color: mediumpurple;
+/* background-color: black; */
 `;
 
 export const Column = styled.div`
