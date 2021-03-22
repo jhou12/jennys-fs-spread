@@ -1,4 +1,4 @@
-// ENV FORMAT:
+# ENV FORMAT:
 
 SQL_USER=usernameHere
 SQL_PASS=passwordHere
