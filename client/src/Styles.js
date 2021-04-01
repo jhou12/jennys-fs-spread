@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 display: flex;
 justify-content: center;
-height: 100vh;
+height: 100%;
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
 color: mediumpurple;

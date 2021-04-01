@@ -1,6 +1,6 @@
 # Blank Canvas Fullstack App🎨
 
-I built this template to expedite the refactoring of my projects. Made using the MERN/SERN stack, React hooks, and styled-components. Once installed, the app displays an array of seeded data from the database of choice, received from a GET request to the server on page load.
+I built this template to expedite the refactoring of my projects. Built using the MERN stack (both MongoDB & MySQL), React hooks, and styled-components. Once installed, the app displays an array of seeded data from the database of choice, received from a GET request to the server on page load.
 
 <p align="center">
 <img src="screenshot.png" width="215"/>

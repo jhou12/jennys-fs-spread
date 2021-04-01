@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const dotenv = require('dotenv').config()
 mongoose.connect(`mongodb://localhost/${process.env.MONGO_DB || 'test'}`, {useNewUrlParser: true, useUnifiedTopology: true});
 
 const db = mongoose.connection;
